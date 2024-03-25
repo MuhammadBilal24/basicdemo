@@ -179,7 +179,6 @@
                     if(data == "Correct")
                     {
                         alert('Deleted');
-                        // easily
                         location.reload();
                     }
                 }
