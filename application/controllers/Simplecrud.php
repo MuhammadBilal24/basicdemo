@@ -54,10 +54,8 @@ class Simplecrud extends CI_Controller {
 	public function delete()
 	{
 		$id = $this->input->post('id');
-		$data=$this->db->delete("select * from students where id='$id'")->result();
-		if($data)
-		{
-			echo("Correct");
-		}
+		$this->db->where('id', $id);
+		$this->db->delete('students');
+		echo("Correct");
 	}
 }
