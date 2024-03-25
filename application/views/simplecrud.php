@@ -179,6 +179,7 @@
                     if(data == "Correct")
                     {
                         alert('Deleted');
+                        location.reload();
                     }
                 }
             })
